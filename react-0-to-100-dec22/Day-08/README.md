@@ -22,7 +22,7 @@
 
 ### Steps
 
-1.
+1. Just run the app & visualize the app yourself
 
 <hr />
 

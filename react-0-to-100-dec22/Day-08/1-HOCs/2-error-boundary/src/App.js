@@ -26,7 +26,7 @@ function App() {
           <hr />
         </div>
         <ErrorBoundary>
-          <AverageCard arr={[1, 2, 3]} />
+          <AverageCard arr={[1, 2]} />
         </ErrorBoundary>
       </header>
     </div>
