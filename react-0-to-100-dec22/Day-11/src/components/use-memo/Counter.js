@@ -18,11 +18,9 @@ function Counter() {
     // }
 
     const isEven = useMemo(() => {
-        console.time('test')
         // let i = 0;
         // while (i < 2000000000) i++;
         console.log('Re-Calculating')
-        console.timeEnd("alok")
         return counterOne % 2 === 0;
     }, [counterOne])
 
