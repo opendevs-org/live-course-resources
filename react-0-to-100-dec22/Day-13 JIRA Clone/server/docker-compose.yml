@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  jira-clone-postgres:
+    image: "postgres:12.9-alpine"
+    environment:
+      - POSTGRES_USER=root_user
+      - POSTGRES_PASSWORD=root_password
+      - POSTGRES_DB=local
+    container_name: jira-clone-postgres
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./volumes/postgresql/data:/var/lib/postgresql/data/ # persist data even if container shuts down
